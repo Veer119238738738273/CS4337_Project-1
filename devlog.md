@@ -18,3 +18,16 @@ print either the result or an error message. I will also include logic from the 
 For this I want to figure out how to implement the tokenized decisions and the Whitespace Helpers. 
 1) Tokenizer -- I will not build a complex tokenizer. I will work from a character list. This keeps changes small and easy to test.
 2) White Space -- I need a safe whitespace skipper for empty input. 
+
+
+#10.20.2025 Time: 8:30 PM
+I forgot to add the main.rkt file so I went ahead and added it and I changed the mode.rkt file a little bit. I created main.rkt, added the language line, and wired a minimal main so I can run the file. 
+I also went ahead and added the mode.rkt file and changed it up a little bit. It seems to be working since I tested it with:
+
+(define (main)
+  (displayln "All modules loaded successfully!"))
+(module+ main
+  (main))
+
+I ended up deleting it since it is no longer needed. Just to check to see if the mode is doing the task correctly (which it is)
+
