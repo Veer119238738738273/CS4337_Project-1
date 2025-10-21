@@ -1,4 +1,4 @@
-#10.20.2025
+#10.20.2025 Time: 5:30 PM
 
 Project Description:
 In this project you will create a prefix-notation expression calculator. The calculator will prompt
@@ -13,3 +13,8 @@ Then I will write functions for each operator: addition, multiplication, divisio
 The history of results will be stored as a list. Each new result will be added to the front of the list, and I will pass this list into each call to the evaluator. 
 This keeps the program functional and avoids mutable state. Finally, I will write the main loop. It will prompt the user, read input, evaluate the expression, and 
 print either the result or an error message. I will also include logic from the provided mode.rkt file to support both interactive and batch modes.
+
+#10.20.2025 Time: 6:30 PM
+For this I want to figure out how to implement the tokenized decisions and the Whitespace Helpers. 
+1) Tokenizer -- I will not build a complex tokenizer. I will work from a character list. This keeps changes small and easy to test.
+2) White Space -- I need a safe whitespace skipper for empty input. 
