@@ -50,4 +50,7 @@ Now I need to build a helper that reads an integer token from a character list a
 2) the remaining characters that were not part of the integer.
 The reason why I need this is so that I can parse number literals anywhere in a prefix expression. Later evaluators will chain by passing along the leftover characters.
 
+#10.21.2025 Time 10:10 AM
+I got an error with my files "system error: no such file or directory; rkt_err=3" even though it is in my directory so now I have to figure that out since I cant run my code unless this is fixed.
+
 
