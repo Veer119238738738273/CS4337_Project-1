@@ -38,3 +38,8 @@ for 0 to 9 and a scanner take-while that walks a list and collects leading chara
 #10.20.2025 Time 9:51 PM
 I found out that there is an error with my helper function digit and take while scanner. Whenever I run my code and give digit values I am getting #f as the output. I need to figure out what the problem is for it.
 
+#10.20.2025 Time 11:03 PM
+I figured out the reason why I got the error. It was becuase I used numeric comparison operators instead of character comparison functions. I also forgot to handle the case when the list was empty, which caused 
+a “contract violation” error when the function tried to take the first element of an empty list.
+Now my code is sucessfully running as it should be.
+
