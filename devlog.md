@@ -43,3 +43,11 @@ I figured out the reason why I got the error. It was becuase I used numeric comp
 a “contract violation” error when the function tried to take the first element of an empty list.
 Now my code is sucessfully running as it should be.
 
+
+#10.20.2025 Time 11:25
+Now I need to build a helper that reads an integer token from a character list and returns two things:
+1) the integer value, and
+2) the remaining characters that were not part of the integer.
+The reason why I need this is so that I can parse number literals anywhere in a prefix expression. Later evaluators will chain by passing along the leftover characters.
+
+
