@@ -35,3 +35,6 @@ I ended up deleting it since it is no longer needed. Just to check to see if the
 Now I need create helper functions digit? and take-while to scan through a character list while evaluating prefix expressions. To do this I am thinking that I need a A predicate digit? that returns #t only 
 for 0 to 9 and a scanner take-while that walks a list and collects leading characters that match a predicate. Finally I need both functions must be safe on empty lists.
 
+#10.20.2025 Time 9:51 PM
+I found out that there is an error with my helper function digit and take while scanner. Whenever I run my code and give digit values I am getting #f as the output. I need to figure out what the problem is for it.
+
