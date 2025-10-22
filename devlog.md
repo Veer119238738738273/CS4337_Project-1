@@ -54,3 +54,12 @@ The reason why I need this is so that I can parse number literals anywhere in a 
 I got an error with my files "system error: no such file or directory; rkt_err=3" even though it is in my directory so now I have to figure that out since I cant run my code unless this is fixed.
 
 
+#10.21.2025 Time 7:52 PM
+So there were a bunch of changes that I had to make and forgot to document them as I was updating them.
+1) I had to make a new folder in my desktop. 
+2) I changed/added some code in my Parse and List function and I changed the name of the file. The parse-int/list function reads a sequence of characters and converts the leading part of it into an integer. It first skips any spaces, 
+checks if there’s a negative sign, and then collects all consecutive digits. If the sequence doesn’t start with valid digits, it raises an error. Once it identifies the number, it converts it from characters to an integer and 
+returns that number along with the remaining unprocessed characters. 
+3) I kept the main function the same since I'm still developing and testing the helper functions separately.
+4) I also changed the name of digit and scanner function to just scanner so that it is more simplistic and easier to call later on
+5) The other files stayed the same overall. Nothing else changed. Now the code seems to be running correctly without any errors.
