@@ -1,14 +1,10 @@
 #lang racket
-(provide history-get-by-id result-id history-empty? history->vector)
-
-(define (history-empty? hist) (null? hist))
-
-(define (history->vector hist)
-  (list->vector hist))
+(provide history-get-by-id result-id)
 
 (define (history-get-by-id hist n)
-  (define vec (history->vector hist))
-  (vector-ref vec (sub1 n)))
+  (cond
+    [(or (<= n 0) (> n (length hist))) (error 'history "bad id")]
+    [else (list-ref (reverse hist) (sub1 n))]))
 
 (define (result-id hist)
   (add1 (length hist)))
