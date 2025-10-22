@@ -1,11 +1,10 @@
 #lang racket
-
-(provide starts-negative-literal? raw-minus?)
-(require "scanner.rkt")
-
-(define (raw-minus? ch) (char=? ch #\-))
+(provide starts-negative-literal?)
+(require "whiteSpace.rkt" "scanner.rkt")
 
 (define (starts-negative-literal? cs)
-  (and (pair? cs)
-       (raw-minus? (car cs))
-       (digit? (cadr cs))))
+  (let* ([cs0 (skip-ws cs)])
+    (and (pair? cs0)
+         (char=? (car cs0) #\-)
+         (let ([after (skip-ws (cdr cs0))])
+           (and (pair? after) (digit? (car after)))))))
