@@ -114,3 +114,6 @@ Functions I need to complete:
 6) repl_loop.rkt & main.rkt – runs main REPL loop
 
 So, now I think I am going to go ahead and start working on the negcheck.rkt fille where I will check for negative signs in the values. 
+
+#10.22.2025 Time: 1:50 AM 
+I think that I am going to stop where I am and take a break. I wrote a line or two for my negcheck.rkt function. I am going to continue with the code tommorow after a break. 
