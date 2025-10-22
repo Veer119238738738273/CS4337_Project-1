@@ -117,3 +117,6 @@ So, now I think I am going to go ahead and start working on the negcheck.rkt fil
 
 #10.22.2025 Time: 1:50 AM 
 I think that I am going to stop where I am and take a break. I wrote a line or two for my negcheck.rkt function. I am going to continue with the code tommorow after a break. 
+
+#10.22.2025 Time 3:08 PM
+I am going to continue working on my negcheck.rkt function. I right now need to add logic that scans the parsed expression and flips the sign of any literal preceded by a unary minus, so negative numbers are handled correctly during evaluation.
