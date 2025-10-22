@@ -75,3 +75,7 @@ I figured out the error in my code! It was becuase I didnt removed extra exports
 first while matching the rule that $1 is the oldest. Any time I get an Error it now shows history: bad id, in the console. 
 
 Now I need to write my next function where I am going to implement the arithmitic appliers so that logic isnt duplicated.. etc.
+
+
+#10.21.2025 Time 11:05 PM
+So I wrote the code for the arithmetic function. However whenever I run the code I saw that using (/ a b) returned rational numbers like 7/3 and crashed with a raw division-by-zero error when b was 0. I think that I need to add a check to handle division by zero and use integer division with quotient instead of / so the output stays an integer and errors are caught properly.
