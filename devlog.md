@@ -88,3 +88,9 @@ Now I have completed the arith.rkt function. Now I am going to move onto the nex
 #10.22.2025 Time 12:36 AM
 I got an error in the new function literals.rkt and I am getting the error message "parse: $ expected". This might be because of the string->list is stripping the $ character or could be treating it as a special which is making the parser to 
 never actually sees $ at the start of the token. I am going to try to fix this and see if it will fix the output of my code.
+
+#10.22.2025 Time 1:17 AM
+Earlier, I thought the reason I was getting the error message “parse: $ expected” was because string->list was stripping the $ character or treating it as a special symbol. It wasnt that, instead the issue was with my eval-dollar function. I 
+assumed the $ symbol would always appear immediately before the digits, with no leading or trailing spaces. I changed it by skipping whitespace before looking for the $ symbol and checked that the next character is actually #\$ before parsing digits.
+
+
