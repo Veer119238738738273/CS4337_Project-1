@@ -65,6 +65,13 @@ returns that number along with the remaining unprocessed characters.
 5) The other files stayed the same overall. Nothing else changed. Now the code seems to be running correctly without any errors.
 
 
-#10.21.2025 Times 10:20 PM
+#10.21.2025 Time 10:20 PM
 What I’m implementing: History lets users reference previous results using $n. The project defines $1 as the oldest result, $2 the next, and so on. However whenever I try to run "(history-get-by-id '(9 5) 3)" I am getting a error 
 saying that the index is out of range. I think that this might be because I dont have bound checks or there might be unessesary exports.
+
+
+#10.21.2025 Time 10:41 PM
+I figured out the error in my code! It was becuase I didnt removed extra exports, add clear bounds checks. I also fixed index mapping by reversing the history when looking it up. This keeps the simple list model with the newest entry 
+first while matching the rule that $1 is the oldest. Any time I get an Error it now shows history: bad id, in the console. 
+
+Now I need to write my next function where I am going to implement the arithmitic appliers so that logic isnt duplicated.. etc.
