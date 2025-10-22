@@ -120,3 +120,7 @@ I think that I am going to stop where I am and take a break. I wrote a line or t
 
 #10.22.2025 Time 3:08 PM
 I am going to continue working on my negcheck.rkt function. I right now need to add logic that scans the parsed expression and flips the sign of any literal preceded by a unary minus, so negative numbers are handled correctly during evaluation.
+
+#10.22.2025 Time 3:54 PM
+I found out that there was an error in my negcheck.rkt function while I was testing to make sure that everything was running correctly. I was getting the error message "car: contract violation". However I did update my code and found the reason to the error. 
+It was because I now skip leading whitespace, verify that I actually see a $, then parse the integer id and fetch from history. I also stopped exporting a helper that shouldn’t be public.
