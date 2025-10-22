@@ -63,3 +63,8 @@ returns that number along with the remaining unprocessed characters.
 3) I kept the main function the same since I'm still developing and testing the helper functions separately.
 4) I also changed the name of digit and scanner function to just scanner so that it is more simplistic and easier to call later on
 5) The other files stayed the same overall. Nothing else changed. Now the code seems to be running correctly without any errors.
+
+
+#10.21.2025 Times 10:20 PM
+What I’m implementing: History lets users reference previous results using $n. The project defines $1 as the oldest result, $2 the next, and so on. However whenever I try to run "(history-get-by-id '(9 5) 3)" I am getting a error 
+saying that the index is out of range. I think that this might be because I dont have bound checks or there might be unessesary exports.
