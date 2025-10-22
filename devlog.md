@@ -73,9 +73,14 @@ saying that the index is out of range. I think that this might be because I dont
 #10.21.2025 Time 10:41 PM
 I figured out the error in my code! It was becuase I didnt removed extra exports, add clear bounds checks. I also fixed index mapping by reversing the history when looking it up. This keeps the simple list model with the newest entry 
 first while matching the rule that $1 is the oldest. Any time I get an Error it now shows history: bad id, in the console. 
-
 Now I need to write my next function where I am going to implement the arithmitic appliers so that logic isnt duplicated.. etc.
 
 
 #10.21.2025 Time 11:05 PM
 So I wrote the code for the arithmetic function. However whenever I run the code I saw that using (/ a b) returned rational numbers like 7/3 and crashed with a raw division-by-zero error when b was 0. I think that I need to add a check to handle division by zero and use integer division with quotient instead of / so the output stays an integer and errors are caught properly.
+
+
+#10.21.2025 Time 11:55 PM
+I ran into an error in my arithmitic function. I Using (/ a b) returned rationals (e.g., 7/3) and raised a raw runtime exception on divide-by-zero. I fixed it by switching the quotient to meet integer division requirements and added 
+an explicit (when (zero? b) ...) guard to raise a tagged error. 
+Now I have completed the arith.rkt function. Now I am going to move onto the next function that I need to work on is the literals.rkt function
