@@ -93,4 +93,24 @@ never actually sees $ at the start of the token. I am going to try to fix this a
 Earlier, I thought the reason I was getting the error message “parse: $ expected” was because string->list was stripping the $ character or treating it as a special symbol. It wasnt that, instead the issue was with my eval-dollar function. I 
 assumed the $ symbol would always appear immediately before the digits, with no leading or trailing spaces. I changed it by skipping whitespace before looking for the $ symbol and checked that the next character is actually #\$ before parsing digits.
 
+#10.22.2025 Time 1:35 AM
+So now I want to quickly spend some time mapping out what functions I already have done/completed and what functions I need to implement
 
+Functions I have completed:
+1) whiteSpace.rkt – handles spacing and trimming
+2) scanner.rkt – reads and categorizes tokens
+3) ParseAndList.rkt – builds parse tree lists
+4) history.rkt – stores and retrieves past inputs
+5) literal.rkt – processes numbers and constants
+6) tokenize.rkt – splits input into tokens
+7) arith.rkt – performs basic math operations
+
+Functions I need to complete:
+1) negcheck.rkt – checks for negative signs
+2) eval_core.rkt – evaluates core expressions
+3) line_eval.rkt – runs single line evaluation
+4) io_fmt.rkt – formats input and output text
+5) handle_line.rkt – manages line parsing flow
+6) repl_loop.rkt & main.rkt – runs main REPL loop
+
+So, now I think I am going to go ahead and start working on the negcheck.rkt fille where I will check for negative signs in the values. 
