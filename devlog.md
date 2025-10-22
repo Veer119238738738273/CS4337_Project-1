@@ -84,3 +84,7 @@ So I wrote the code for the arithmetic function. However whenever I run the code
 I ran into an error in my arithmitic function. I Using (/ a b) returned rationals (e.g., 7/3) and raised a raw runtime exception on divide-by-zero. I fixed it by switching the quotient to meet integer division requirements and added 
 an explicit (when (zero? b) ...) guard to raise a tagged error. 
 Now I have completed the arith.rkt function. Now I am going to move onto the next function that I need to work on is the literals.rkt function
+
+#10.22.2025 Time 12:36 AM
+I got an error in the new function literals.rkt and I am getting the error message "parse: $ expected". This might be because of the string->list is stripping the $ character or could be treating it as a special which is making the parser to 
+never actually sees $ at the start of the token. I am going to try to fix this and see if it will fix the output of my code.
