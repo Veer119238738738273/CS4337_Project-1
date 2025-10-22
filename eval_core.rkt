@@ -7,3 +7,6 @@
   (define e2 (eval-expr cs hist))
   (list (apply-bin op (first e1) (first e2)) (second e2)))
 
+(define (eval-un op cs hist eval-expr)
+  (define e1 (eval-expr cs hist))
+  (list (apply-un op (first e1)) (second e1)))
