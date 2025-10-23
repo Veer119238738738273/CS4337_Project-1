@@ -174,3 +174,6 @@ I have started on the handle_line function. I havent tested the function to see 
 Once this is done I am going to go through each file and comment the code so that it is more clear on what each thing is doing and quickly create a ReadMe File on github. Once everything works I think that I should be good to go and end the project.
 End of session 
 
+
+**#10.23.2025 Time 12:43 PM**
+The goal of the handle_line function is to take a user input line and produce side effects. The function should print either the result or an error message. It should update the history only when the evaluation succeeds. The printed identifier should match the next available index based on the current history length. I was able to complete the function I had a few errors but they didnt seem too hard to fix. I just aligned id printing with the rule “next id = length + 1 (before adding the new value) and after this change my code was working properly.
