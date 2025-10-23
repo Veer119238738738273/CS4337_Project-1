@@ -171,6 +171,6 @@ I have started on the handle_line function. I havent tested the function to see 
 1) Finish and make sure that the handle_line function works properly
 2)  repl_loop.rkt & main.rkt and make sure that the code all compiles and runs properly. 
 
-Once this is done I am going to go through each file and comment the code so that it is more clear on what each thing is doing. Once everything works I think that I should be good to go and end the project.
+Once this is done I am going to go through each file and comment the code so that it is more clear on what each thing is doing and quickly create a ReadMe File on github. Once everything works I think that I should be good to go and end the project.
 End of session 
 
