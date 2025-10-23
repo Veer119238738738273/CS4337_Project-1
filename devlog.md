@@ -183,3 +183,10 @@ The goal of the handle_line function is to take a user input line and produce si
 I am going to work on the last function, repl_loop.rkt. Its purpose is to read user input, evaluate it, print the result, and repeat this process to form the calculator’s interactive loop. The program runs until the user types “quit” or reaches the end of input. I plan to add a helper function, maybe-prompt, to display a "> " prompt in interactive mode. Then I will write the main function, repl, which shows the prompt, reads a line, checks for “quit” or EOF, and if not found, calls handle-line to process the input and update history. The loop will then call itself recursively with the new history.
 
 Now I am going to go ahead and try to implement this.
+
+
+**#10.23.2025 Time 4:09 PM**
+I finished with the repl_loop function now I need to finish my main.rkt file and update it and I should be good to go in terms of completing this project. After the main.rkt I am going to test it out with some test cases to make sure that the code is function as
+intended and fix any errors if they do come as I test.
+
+
