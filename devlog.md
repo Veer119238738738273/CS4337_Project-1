@@ -177,3 +177,9 @@ End of session
 
 **#10.23.2025 Time 12:43 PM**
 The goal of the handle_line function is to take a user input line and produce side effects. The function should print either the result or an error message. It should update the history only when the evaluation succeeds. The printed identifier should match the next available index based on the current history length. I was able to complete the function I had a few errors but they didnt seem too hard to fix. I just aligned id printing with the rule “next id = length + 1 (before adding the new value) and after this change my code was working properly.
+
+
+**#10.23.2025 Time 1:10 PM**
+I am going to work on the last function, repl_loop.rkt. Its purpose is to read user input, evaluate it, print the result, and repeat this process to form the calculator’s interactive loop. The program runs until the user types “quit” or reaches the end of input. I plan to add a helper function, maybe-prompt, to display a "> " prompt in interactive mode. Then I will write the main function, repl, which shows the prompt, reads a line, checks for “quit” or EOF, and if not found, calls handle-line to process the input and update history. The loop will then call itself recursively with the new history.
+
+Now I am going to go ahead and try to implement this.
