@@ -161,4 +161,7 @@ Functions I need to complete:
 2) handle_line.rkt – manages line parsing flow
 3) repl_loop.rkt & main.rkt – runs main REPL loop
 
+**#10.23.2025 Time: 12:45 AM**
+I just finished with the io_fmt function where I formats input and output text. 
 
+The error I had before was printing exact numbers produced 3 instead of 3.0 and rationals like 7/3 instead of 2.0 when combined with quotient/eval. I fixed this by switching to real->double to force the printed numeric shape and removed unused exports. Now that I am done with this function I am going to work on the next one which is handle_line.rkt. I think that this is going to be my last function today and I will work on the other one later after a break. 
