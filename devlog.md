@@ -165,3 +165,12 @@ Functions I need to complete:
 I just finished with the io_fmt function where I formats input and output text. 
 
 The error I had before was printing exact numbers produced 3 instead of 3.0 and rationals like 7/3 instead of 2.0 when combined with quotient/eval. I fixed this by switching to real->double to force the printed numeric shape and removed unused exports. Now that I am done with this function I am going to work on the next one which is handle_line.rkt. I think that this is going to be my last function today and I will work on the other one later after a break. 
+
+**#10.23.2025 Time 1:34 AM**
+I have started on the handle_line function. I havent tested the function to see if it works properly. I think it should but as of now I am going to take a break and work on it later today. I have 2 more things left for this project. 
+1) Finish and make sure that the handle_line function works properly
+2)  repl_loop.rkt & main.rkt and make sure that the code all compiles and runs properly. 
+
+Once this is done I am going to go through each file and comment the code so that it is more clear on what each thing is doing. Once everything works I think that I should be good to go and end the project.
+End of session 
+
