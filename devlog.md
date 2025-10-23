@@ -130,3 +130,7 @@ The goal is to build the core evaluator (eval_core.rkt) that understands prefix 
 
 #10.22.2025 Time 10:10 PM
 I finished with the eval_core.rkt function and while I was writing it I had a bunch of errors that I had to fix both in eval_core.rkt and ParseAndList regarding blank spaces. Now I was able to resolve the problem and the code seems to be functioning properly now. I am now going to move onto the next fuction which iis line_eval.rkt. In this function I will be parsing a single input line, trimming spaces, tokenizing, calling eval_core, resolving $n history reads and unary minus, then returning the value while appending it to history.
+
+#10.22.2025 Time 11:03 PM
+I got an error while testing the function with the case (evaluate-line "+ 1 2 2" '()). The issue seems to be that the function does not properly check for leftover characters after evaluating the main expression. It accepts extra input instead of raising an error. I plan to fix this by trimming any trailing whitespace and adding a check that raises an error if extra non-whitespace characters remain in the input.
+
