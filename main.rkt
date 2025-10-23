@@ -5,4 +5,4 @@
   (repl '()))
 
 (module+ main
-  (main))mainmainmain
+  (main))
