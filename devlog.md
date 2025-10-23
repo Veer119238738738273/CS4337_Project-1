@@ -127,3 +127,6 @@ It was because I now skip leading whitespace, verify that I actually see a $, th
 
 #10.22.2025 Time 4:40 PM
 The goal is to build the core evaluator (eval_core.rkt) that understands prefix operations such as +, *, /, and unary -. It also needs to support history lookups like $n and number literals. Each evaluation should return a pair (value rest) so other parsers can chain results easily.
+
+#10.22.2025 Time 10:10 PM
+I finished with the eval_core.rkt function and while I was writing it I had a bunch of errors that I had to fix both in eval_core.rkt and ParseAndList regarding blank spaces. Now I was able to resolve the problem and the code seems to be functioning properly now. I am now going to move onto the next fuction which iis line_eval.rkt. In this function I will be parsing a single input line, trimming spaces, tokenizing, calling eval_core, resolving $n history reads and unary minus, then returning the value while appending it to history.
