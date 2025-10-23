@@ -1,10 +1,8 @@
 #lang racket
-(require "mode.rkt"
-         "tokenize.rkt"
-         "whiteSpace.rkt")
+(require "repl_loop.rkt")
 
 (define (main)
-  (displayln "All modules loaded successfully!"))
+  (repl '()))
 
 (module+ main
-  (main))
+  (main))mainmainmain
