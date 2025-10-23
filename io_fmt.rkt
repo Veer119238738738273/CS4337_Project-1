@@ -1,12 +1,10 @@
 #lang racket
-
-(provide print-result print-error show)
+(provide print-result print-error)
 
 (define (print-result id value)
-  (printf "~a: ~a\n" id value))
+  (display id) (display ": ")
+  (display (real->double-flonum value))
+  (newline))
+
 (define (print-error)
-  (displayln "Invalid Expression"))
-(define (show msg)
-  (displayln msg))
-
-
+  (displayln "Error: Invalid Expression"))
