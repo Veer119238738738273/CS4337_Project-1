@@ -190,3 +190,26 @@ I finished with the repl_loop function now I need to finish my main.rkt file and
 intended and fix any errors if they do come as I test.
 
 
+**#10.23.2025 Time 8:01 PM**
+I finished with the main function and all the previous function. The code seems to be running properly on my end. I think now what I am going to do is work on the readme.md file and quickly mention the project summary and my takeaways from the project. I think that after that I might be done with the project all together. 
+
+
+As a reminder here is all the functions I have completed and all the functions I still need to work on.
+Functions I have completed:
+1) whiteSpace.rkt – handles spacing and trimming
+2) scanner.rkt – reads and categorizes tokens
+3) ParseAndList.rkt – builds parse tree lists
+4) history.rkt – stores and retrieves past inputs
+5) literal.rkt – processes numbers and constants
+6) tokenize.rkt – splits input into tokens
+7) arith.rkt – performs basic math operations
+8) negcheck.rkt – checks for negative signs
+9) eval_core.rkt – evaluates core expressions
+10) line_eval.rkt – runs single line evaluation
+11) io_fmt.rkt – formats input and output text
+12) handle_line.rkt – manages line parsing flow
+13) repl_loop.rkt & main.rkt – runs main REPL loop
+
+Functions I need to complete:
+1) Readme.md
+
