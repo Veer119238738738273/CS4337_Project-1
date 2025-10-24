@@ -1,5 +1,5 @@
-**#10.20.2025 Time: 5:30 PM
-**
+**#10.20.2025 Time: 5:30 PM **
+
 Project Description:
 In this project you will create a prefix-notation expression calculator. The calculator will prompt
 the user for an expression in prefix notation and calculate the result of the inputted expression.
